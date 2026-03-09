@@ -1,3 +1,7 @@
+# AI Dev Notes
+
+AI 도구를 활용한 개발 실험과 기록을 정리하는 저장소
+
 # AI 활용 기록 001 - MovieFinder 개발 과정
 
 ## 목적
