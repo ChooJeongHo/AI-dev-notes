@@ -19,6 +19,9 @@ AI에게 역할이나 기능을 정의한 구조를 의미한다.
 같은 작업을 더 효율적으로 수행하도록  
 프롬프트와 작업 흐름을 정리한 일종의 **AI 작업 템플릿**이다.
 
+Claude Code Skill은 특정 작업을 수행하기 위한 instructions, scripts, resources 등을 묶은 구조로,
+AI가 반복적인 작업을 더 효율적으로 수행하도록 돕는다.
+
 ## Claude Code Skill의 장점
 
 ### 1. 반복 작업 자동화
