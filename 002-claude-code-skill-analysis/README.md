@@ -1,56 +1,95 @@
 # AI 활용 기록 002 - Claude Code Skill 분석
 
 ## 목적
-Claude Code에서 말하는 "Skill"이 무엇인지 이해하고 어떤 장점이 있는지, 어떻게 만들어지는지 정리하기 위해 작성
+Claude Code에서 제공하는 Skill 개념을 이해하고  
+실제 개발 과정에서 어떻게 활용할 수 있는지 정리하기 위해 작성하였다.
+
+---
 
 ## Claude Code Skill이란
 
-Claude Code에서 Skill은 특정 작업을 수행할 수 있도록 AI에게 역할이나 기능을 정의한 구조를 의미한다.
+Claude Code Skill은 특정 작업을 수행하기 위한  
+instructions, scripts, resources 등을 묶어 둔 구조로  
+AI가 반복적인 작업을 더 효율적으로 수행하도록 돕는 기능이다.
 
-예를 들어
+이를 통해 다음과 같은 작업을 빠르게 수행할 수 있다.
 
 - 코드 생성
 - 코드 리팩토링
 - 오류 분석
 - 문서 작성
 
-같은 작업을 더 효율적으로 수행하도록 프롬프트와 작업 흐름을 정리한 일종의 **AI 작업 템플릿**이다.
+Claude Code Skill을 활용하면 개발 workflow에서  
+반복되는 작업을 빠르게 처리할 수 있다.
 
-Claude Code Skill은 특정 작업을 수행하기 위한 instructions, scripts, resources 등을 묶은 구조로, AI가 반복적인 작업을 더 효율적으로 수행하도록 돕는다.
+---
 
 ## Claude Code Skill의 장점
 
 ### 1. 반복 작업 자동화
-같은 유형의 작업을 반복할 때 일관된 방식으로 결과를 얻을 수 있다.
+같은 유형의 작업을 반복할 때  
+일관된 방식으로 결과를 얻을 수 있다.
 
 ### 2. 개발 생산성 향상
 코드 생성, 리팩토링, 문서 작성 등을 빠르게 수행할 수 있다.
 
-### 3. 작업 구조 정리
-개발 작업을 특정 역할이나 패턴으로 정리할 수 있어 AI 활용 방식이 체계화된다.
+### 3. 개발 workflow 정리
+특정 작업 패턴을 Skill 형태로 정리하면  
+AI 활용 방식이 체계화된다.
 
-## Claude Code Skill 활용 예시
+---
 
-예를 들어 다음과 같은 Skill을 만들 수 있다.
+## Claude Code Skill 활용 예시 (MovieFinder 프로젝트)
 
-- Kotlin 코드 생성 Skill
-- 코드 리팩토링 Skill
-- 오류 분석 Skill
-- README 생성 Skill
+Claude Code를 활용하여 Android 영화 검색 앱 **MovieFinder** 개발 과정에서  
+코드 생성과 기능 구현을 진행하였다.
 
-이런 방식으로 특정 작업에 맞는 Skill을 정의하면 AI를 개발 보조 도구로 효율적으로 사용할 수 있다.
+프로젝트 링크  
+https://github.com/ChooJeongHo/MovieFinder
 
-## Skill을 만드는 방식 (개념)
+### 예시 작업 : 영화 검색 기능 구현
 
-Claude Code Skill은 보통 다음 요소로 구성된다.
+MovieFinder 앱에서 영화 검색 기능을 구현하기 위해  
+Claude Code에게 Kotlin 기반 코드 생성을 요청하였다.
 
-1. 역할 정의 (Role)
-2. 작업 목표 (Task)
-3. 입력 정보 (Input)
-4. 원하는 결과 형식 (Output)
+#### Claude Code 요청 예시
 
-이 요소들을 프롬프트 형태로 구성하면 특정 목적에 맞는 Skill을 만들 수 있다.
+Kotlin Android 앱에서 영화 검색 API를 호출하고  
+RecyclerView로 결과를 보여주는 구조를 만들어줘
+
+#### 생성된 코드 예시
+
+```kotlin
+fun searchMovies(query: String) {
+    viewModelScope.launch {
+        try {
+            val response = movieApi.searchMovies(query)
+            _movies.value = response.results
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+}
+```
+
+#### 활용 결과
+
+Claude Code를 통해 API 호출 구조와  
+검색 결과 처리 코드를 빠르게 생성할 수 있었다.
+
+이후 실제 앱 구조에 맞게 코드를 수정하고  
+ViewModel 및 UI 구조와 연결하여 기능을 완성하였다.
+
+---
 
 ## 느낀 점
 
-AI 도구를 활용할 때 단순히 질문을 하는 것보다 특정 작업을 위한 Skill 형태로 정리하면 더 일관된 결과를 얻을 수 있다는 점을 이해했다.
+Claude Code를 활용하면 초기 코드 작성 속도를 빠르게 높일 수 있다.
+
+다만 생성된 코드를 그대로 사용하는 것보다는
+
+- 코드 구조 검토
+- 기능 동작 확인
+- 추가 수정
+
+과정을 거쳐 개발 workflow에 맞게 적용하는 것이 중요하다는 것을 확인하였다.
