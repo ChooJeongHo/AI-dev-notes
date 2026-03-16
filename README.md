@@ -11,7 +11,9 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 - [001 - MovieFinder AI Workflow](./001-moviefinder-ai-workflow/) - Claude Code로 영화 추천 앱 만들기
 - [002 - Claude Code Skill Analysis](./002-claude-code-skill-analysis/) - Claude Code 스킬 분석 실험 기록
 - [003 - Android 코드리뷰 스킬 실전 검증](./003-android-codereview-skill-validation/) - 스킬 유무에 따른 코드리뷰 차이 비교
-- 
+- [004 - MovieFinder 시청 통계 기능 추가](./004-moviefinder-stats-feature/) - 1일차 대비 AI 워크플로우 성장 비교
+-
+
 ---
 
 ## 목적
