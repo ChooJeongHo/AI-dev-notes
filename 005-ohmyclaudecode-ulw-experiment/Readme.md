@@ -108,7 +108,7 @@ ulw 모드는 앞에 `ulw` 키워드만 추가
 
 | 시청 통계 화면 |
 |:---:|
-| ![stats](./screenshots/stats_chart.png) |
+| <img width="1080" height="2424" alt="Screenshot_20260318_100435" src="https://github.com/user-attachments/assets/4fc17af0-e897-4c04-9b7a-ee9d09143bf3" />|
 
 > 장르별 시청 비율 파이차트 + 월별 시청 편수 바차트
 
