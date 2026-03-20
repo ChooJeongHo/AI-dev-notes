@@ -13,6 +13,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 - [003 - Android 코드리뷰 스킬 실전 검증](./003-android-codereview-skill-validation/) - 스킬 유무에 따른 코드리뷰 차이 비교
 - [004 - MovieFinder 시청 통계 기능 추가](./004-moviefinder-stats-feature/) - 1일차 대비 AI 워크플로우 성장 비교
 - [005 - oh-my-claudecode ulw 모드 실험](./005-ohmyclaudecode-ulw-experiment/) - 일반 모드 vs ulw 모드 접근 방식 비교
+- [006 - oh-my-claudecode /team 멀티 에이전트 실험](./006-ohmyclaudecode-team-experiment/) - 3개 에이전트 레이어별 병렬 작업 비교
 
 ---
 
