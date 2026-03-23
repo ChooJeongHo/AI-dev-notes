@@ -105,9 +105,11 @@ ulw나 team 모드처럼 별도 지시 없이 자동으로 최적화한 것이 �
 
 ### 테스트 결과
 
-- 기존 145개 → **154개** (9개 자동 추가)
-- SettingsViewModelTest: +4개
-- PreferencesRepositoryImplTest: +5개
+- ralph 실험 직후: 기존 145개 → **154개** (9개 자동 추가)
+  - SettingsViewModelTest: +4개
+  - PreferencesRepositoryImplTest: +5개
+- Android Studio Claude 피드백 반영 후: **161개** (7개 추가)
+  - WatchGoalNotificationHelperTest: +7개
 - Detekt PASS, 빌드 SUCCESS
 
 ---
@@ -128,7 +130,7 @@ ulw나 team 모드처럼 별도 지시 없이 자동으로 최적화한 것이 �
 |------|------------|--------------|--------------|
 | 모드 특성 | 병렬 빠른 처리 | 역할 명시 분업 | 집요한 완성 |
 | 에이전트 분배 | AI 자동 | 직접 지정 | AI 자동 (User Story 단위) |
-| 테스트 자동 작성 | 없음 | 없음 | 있음 (9개 자동 추가) |
+| 테스트 자동 작성 | 없음 | 없음 | 있음 (161개, +16개) |
 | 오류 자동 수정 | 제한적 | 제한적 | 핵심 특기 |
 | 소요 시간 | 8분 2초 | 31분 27초 | 14분 39초 |
 | 적합한 작업 | 빠른 기능 추가 | 레이어 명확한 작업 | 복잡한 기능 + 테스트 |
