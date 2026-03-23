@@ -116,7 +116,7 @@ ulw나 team 모드처럼 별도 지시 없이 자동으로 최적화한 것이 �
 
 | 설정 화면 - 목표 설정 | 통계 화면 - 달성률 |
 |:---:|:---:|
-| <img width="250" alt="시청 목표 설정" src="https://github.com/user-attachments/assets/setting_screenshot" /> | <img width="250" alt="달성률 화면" src="https://github.com/user-attachments/assets/stats_screenshot" /> |
+| <img width="250" alt="시청 목표 설정" src="./watch_goal_setting.png" /> | <img width="250" alt="달성률 화면" src="./watch_goal_stats.png" /> |
 
 > 설정에서 NumberPicker로 목표 편수 설정 → 통계 화면에서 달성률 + 프로그레스바 + 남은 편수 확인
 
