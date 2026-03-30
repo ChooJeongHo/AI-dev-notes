@@ -17,6 +17,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 - [007 - oh-my-claudecode ralph 모드 실험](./007-ohmyclaudecode-ralph-experiment/) - ulw/team/ralph 3부작 완성 및 종합 비교
 - [008 - CLAUDE.md 활용 실험](./008-claudemd-experiment/) - CLAUDE.md 유무에 따른 코드 생성 차이 분석
 - [009 - playwright-cli 사람인 자동 지원 시스템](./009-saramin-auto-apply/) - playwright-cli로 취업 지원 자동화 구축
+- [010 - GitHub Actions + Claude API PR 자동 코드 리뷰](./010-github-actions-claude-pr-review/) - PR 생성 시 Claude API 자동 코드 리뷰 워크플로우
 
 ---
 
