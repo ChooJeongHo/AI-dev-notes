@@ -19,6 +19,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 - [009 - playwright-cli 사람인 자동 지원 시스템](./009-saramin-auto-apply/) - playwright-cli로 취업 지원 자동화 구축
 - [010 - GitHub Actions + Claude API PR 자동 코드 리뷰](./010-github-actions-claude-pr-review/) - PR 생성 시 Claude API 자동 코드 리뷰 워크플로우
 - [011 - Context7 MCP + ML Kit 영화 태그 AI 추천](./011-context7-mlkit-tag-suggestion/) - Context7 실시간 문서 참조로 ML Kit 태그 추천 구현
+- [012 - Claude Code로 테스트 커버리지 분석 및 개선](./012-jacoco-coverage-improvement/) - JaCoCo 분석부터 자동 테스트 추가까지
 
 ---
 
