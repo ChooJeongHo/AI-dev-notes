@@ -21,6 +21,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 - [011 - Context7 MCP + ML Kit 영화 태그 AI 추천](./011-context7-mlkit-tag-suggestion/) - Context7 실시간 문서 참조로 ML Kit 태그 추천 구현
 - [012 - Claude Code로 테스트 커버리지 분석 및 개선](./012-jacoco-coverage-improvement/) - JaCoCo 분석부터 자동 테스트 추가까지
 - [013 - GitHub MCP로 코드 분석 및 이슈 자동 등록](./013-github-mcp-issue-automation/) - GitHub MCP로 코드 품질 분석 후 이슈 자동 생성
+- [014 - GitHub MCP로 이슈 → 코드 수정 → PR 자동화](./014-github-mcp-issue-to-pr/) - 이슈 읽기부터 PR 생성까지 전체 자동화
 
 ---
 
