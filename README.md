@@ -22,6 +22,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 - [012 - Claude Code로 테스트 커버리지 분석 및 개선](./012-jacoco-coverage-improvement/) - JaCoCo 분석부터 자동 테스트 추가까지
 - [013 - GitHub MCP로 코드 분석 및 이슈 자동 등록](./013-github-mcp-issue-automation/) - GitHub MCP로 코드 품질 분석 후 이슈 자동 생성
 - [014 - GitHub MCP로 이슈 → 코드 수정 → PR 자동화](./014-github-mcp-issue-to-pr/) - 이슈 읽기부터 PR 생성까지 전체 자동화
+- [015 - GitHub MCP + gh CLI로 릴리즈 노트 자동 생성](./015-release-notes-automation/) - 커밋 분석 후 v1.0.0 릴리즈 노트 자동 작성 및 등록
 
 ---
 
