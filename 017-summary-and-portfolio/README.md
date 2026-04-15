@@ -86,7 +86,7 @@ Claude Code가 코드를 짜줘도, 어떤 기능이 필요한지, 결과가 맞
 
 ## 포트폴리오 문서
 
-→ [AI를 활용한 Android 개발 워크플로우 자동화 구축기](./PORTFOLIO.md)
+→ [AI를 활용한 Android 개발 워크플로우 자동화 구축기](../PORTFOLIO.md)
 
 ---
 
