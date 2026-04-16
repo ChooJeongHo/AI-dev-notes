@@ -6,6 +6,12 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 ---
 
+## 포트폴리오
+
+→ [AI를 활용한 Android 개발 워크플로우 자동화 구축기](./PORTFOLIO.md)
+
+---
+
 ## 기록 목록
 
 - [001 - MovieFinder AI Workflow](./001-moviefinder-ai-workflow/) - Claude Code로 영화 추천 앱 만들기
@@ -25,12 +31,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 - [015 - GitHub MCP + gh CLI로 릴리즈 노트 자동 생성](./015-release-notes-automation/) - 커밋 분석 후 v1.0.0 릴리즈 노트 자동 작성 및 등록
 - [016 - Exa MCP로 라이브러리 보안 취약점 및 버전 분석](./016-exa-mcp-library-security-check/) - 실시간 웹 검색으로 라이브러리 보안 점검 및 버그 발견
 - [017 - 16일 실험 총정리 및 포트폴리오 문서 작성](./017-summary-and-portfolio/) - 전체 실험 종합 정리 및 AI 활용 인재 포트폴리오 구성
-
----
-
-## 포트폴리오
-
-→ [AI를 활용한 Android 개발 워크플로우 자동화 구축기](./PORTFOLIO.md)
+- [018 - think / ultra think 키워드 실험](./018-think-ultathink-experiment/) - 프롬프트 키워드에 따른 분석 깊이 차이 비교
 
 ---
 
