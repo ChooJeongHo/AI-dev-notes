@@ -33,6 +33,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 - [017 - 16일 실험 총정리 및 포트폴리오 문서 작성](./017-summary-and-portfolio/) - 전체 실험 종합 정리 및 AI 활용 인재 포트폴리오 구성
 - [018 - think / ultra think 키워드 실험](./018-think-ultrathink-experiment/) - 프롬프트 키워드에 따른 분석 깊이 차이 비교
 - [019 - Claude Code AFK 자율 실행 모드 실험](./019-afk-autonomous-mode/) - 이슈 목록만 전달 후 Claude가 스스로 판단하고 처리하는 자율 실행
+- [020 - Claude API로 커스텀 코드 리뷰어 만들기](./020-claude-api-code-reviewer/) - Claude API 직접 호출로 로컬 HTML 코드 리뷰어 제작
 
 ---
 
