@@ -40,7 +40,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | [006](./006-ohmyclaudecode-team-experiment/) | oh-my-claudecode /team 멀티 에이전트 실험 | 3개 에이전트 레이어별 병렬 작업 |
 | [007](./007-ohmyclaudecode-ralph-experiment/) | oh-my-claudecode ralph 모드 실험 | ulw / team / ralph 3부작 종합 비교 |
 | [008](./008-claudemd-experiment/) | CLAUDE.md 활용 실험 | CLAUDE.md 유무에 따른 코드 생성 차이 |
-| [009](./009-saramin-auto-apply/) | playwright-cli 사람인 자동 지원 시스템 | **취업 지원 자동화 파이프라인 구축** |
+| [009](./009-saramin-auto-apply/) | playwright-cli 사람인 자동 지원 시스템 | **cron 기반 매일 자동 지원, 누적 54건 지원 완료** |
 | [010](./010-github-actions-claude-pr-review/) | GitHub Actions + Claude API PR 자동 코드 리뷰 | PR 생성 → 자동 리뷰 코멘트 |
 | [011](./011-context7-mlkit-tag-suggestion/) | Context7 MCP + ML Kit 영화 태그 AI 추천 | 실시간 공식 문서 참조로 구현 |
 | [012](./012-jacoco-coverage-improvement/) | Claude Code로 테스트 커버리지 분석 및 개선 | **JaCoCo 74.8% 달성** |
