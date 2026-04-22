@@ -1,5 +1,7 @@
 # AI Dev Notes
 
+> **21일, 21개 실험** — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록
+
 AI 도구를 활용한 개발 실험과 학습 기록 저장소
 
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -9,6 +11,19 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 ## 포트폴리오
 
 → [AI를 활용한 Android 개발 워크플로우 자동화 구축기](./PORTFOLIO.md)
+
+---
+
+## 📊 핵심 성과 요약
+
+| 지표 | 수치 |
+|---|---|
+| 총 실험 기간 | 21일 |
+| 실험 수 | 21개 |
+| JaCoCo 테스트 커버리지 달성 | **74.8%** |
+| ultra think 자동 발견 이슈 | **30개+** (4개 에이전트 병렬 분석) |
+| 자동화 구축 항목 | PR 코드 리뷰, 릴리즈 노트, 취업 지원, 보안 취약점 분석 |
+| 실험 대상 | [MovieFinder](https://github.com/ChooJeongHo/MovieFinder) (Android) |
 
 ---
 
