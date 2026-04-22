@@ -24,6 +24,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | ultra think 자동 발견 이슈 | **30개+** (4개 에이전트 병렬 분석) |
 | 자동화 구축 항목 | PR 코드 리뷰, 릴리즈 노트, 취업 지원, 보안 취약점 분석 |
 | 실험 대상 | [MovieFinder](https://github.com/ChooJeongHo/MovieFinder) (Android) |
+| 유닛 테스트 수 | **0 → 465개** (Claude Code 자동 작성) |
 
 ---
 
