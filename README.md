@@ -57,5 +57,25 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 ## 목적
 
-- AI 활용 개발 학습 기록
-- AI 기반 개발 workflow 실험
+- AI 도구를 단순히 "써보는" 것이 아니라, **실제 Android 프로젝트에 어떻게 통합하면 생산성이 올라가는지** 직접 실험하고 수치로 증명합니다.
+- 비전공자 출신으로 Android 개발을 시작했고, AI 도구를 활용해 코드 품질·테스트·자동화 전반을 빠르게 성장시킨 과정을 기록합니다.
+- 각 실험은 동일한 프로젝트([MovieFinder](https://github.com/ChooJeongHo/MovieFinder))를 대상으로 반복하여 실험 간 비교가 가능합니다.
+
+---
+
+## 🛠️ 사용 도구
+
+**AI 도구**
+- Claude Code (CLI) — 코드 생성, 리팩토링, 테스트 자동화, 멀티 에이전트
+- Claude API — GitHub Actions 연동, 커스텀 코드 리뷰어 제작
+- oh-my-claudecode — ulw / team / ralph 모드 실험
+
+**MCP 서버**
+- GitHub MCP — 이슈 생성, PR 자동화, 릴리즈 노트
+- Context7 MCP — 실시간 공식 문서 참조
+- Exa MCP — 라이브러리 보안 취약점 실시간 검색
+- Figma MCP — 디자인 → Android 코드 자동 변환
+- playwright-cli — 브라우저 자동화, 취업 지원 자동화
+
+**인프라**
+- GitHub Actions — CI/CD, PR 자동 리뷰, 인증서 핀 검증
