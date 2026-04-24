@@ -108,4 +108,4 @@ sealed interface WatchHistoryState {
 ---
 
 *실험 대상: [ChooJeongHo/MovieFinder](https://github.com/ChooJeongHo/MovieFinder)*  
-*작성일: 2026-04-24*
+*작성일: 2026-04-23*
