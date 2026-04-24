@@ -1,5 +1,5 @@
 # AI Dev Notes
-**22일, 22개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**23일, 23개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소  
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -16,8 +16,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 22일 |
-| 실험 수 | 22개 |
+| 총 실험 기간 | 23일 |
+| 실험 수 | 23개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -52,6 +52,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 020 | [Claude API로 커스텀 코드 리뷰어 만들기](./020-claude-api-code-reviewer/) | 로컬 HTML 코드 리뷰어 직접 제작 |
 | 021 | [Figma MCP로 디자인 → Android XML 자동 변환](./021-figma-mcp-android-xml/) | Figma 파일 → Android 코드 변환 |
 | 022 | [System Prompt 설계 실험](./022-system-prompt-engineering/) | 역할+제약+형식 설계 시 발견 이슈 0→3개, 전문가 수준 응답 |
+| 023 | [Few-shot Prompting 실험](./023-few-shot-prompting/) | 예시 제공은 형식 통제 도구, 버그 발견 수는 0-shot이 최다 |
 
 ---
 
