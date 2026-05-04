@@ -1,5 +1,5 @@
 # AI Dev Notes
-**28일, 28개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**29일, 29개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소  
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -16,8 +16,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 28일 |
-| 실험 수 | 28개 |
+| 총 실험 기간 | 29일 |
+| 실험 수 | 29개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -57,7 +57,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 025 | [System Prompt + Few-shot + CoT 조합 실험](./025-combined-prompting/) | 3기법 조합 시 발견 이슈 2배, Before/After 코드 자동 생성 |
 | 026 | [Claude vs GPT 동일 프롬프트 비교 실험](./026-claude-vs-gpt/) | GPT는 이슈 더 많이 발견, Claude는 트레이드오프 분석 강점 |
 | 027 | [Claude Code로 XML → Jetpack Compose 마이그레이션](./027-xml-to-compose/) | 점진적 마이그레이션으로 선언형 UI 핵심 개념 체험 |
-| 028 | [Filesystem MCP로 프로젝트 건강도 리포트 자동 생성](./028-filesystem-mcp-health-report/) | 340파일 분석 → PROJECT_HEALTH.md 자동 생성, Compose+Detekt 충돌 해결 |
+| 028 | [Filesystem MCP로 프로젝트 건강도 리포트 자동 생성](./028-filesystem-mcp-health-report/) | 340파일 분석 → PROJECT_HEALTH.md 자동 생성 |
+| 029 | [Claude Code vs Codex CLI 동일 요청 비교 실험](./029-claude-code-vs-codex-cli/) | 빠른 핵심 분석은 Codex, 상세 코드 예시는 Claude Code 강점 |
 
 ---
 
@@ -75,6 +76,7 @@ AI 도구를 단순히 "써보는" 것이 아니라, 실제 Android 프로젝트
 
 **AI 도구**
 - Claude Code (CLI) — 코드 생성, 리팩토링, 테스트 자동화, 멀티 에이전트
+- Codex CLI — OpenAI 터미널 기반 코딩 에이전트 (비교 실험)
 - Claude API — GitHub Actions 연동, 커스텀 코드 리뷰어 제작
 - oh-my-claudecode — ulw / team / ralph 모드 실험
 
