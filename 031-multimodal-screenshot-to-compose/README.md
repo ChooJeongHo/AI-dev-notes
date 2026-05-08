@@ -13,10 +13,12 @@ MovieFinder 홈 화면 스크린샷을 Claude에게 주고 Compose 코드 자동
 
 ## 실험 방법
 
-Claude Code 터미널은 이미지 입력이 불가능하기 때문에 **Claude.ai 채팅창**에서 진행.
+Claude Code 터미널에서도 이미지 입력이 가능하다.  
+스크린샷 찍은 후 **Control + Option + V** 로 터미널에 붙여넣기.  
+또는 Claude.ai 채팅창에 이미지 첨부해도 동일하게 동작.
 
 ```
-[스크린샷 이미지 첨부]
+[스크린샷 이미지 첨부 — Control + Option + V]
 이 화면을 Compose로 구현해줘.
 어떤 컴포넌트들이 필요한지 분석하고 코드도 작성해줘.
 ```
@@ -180,11 +182,11 @@ fun MovieCard(movie: Movie, onClick: () -> Unit) {
 | 구분 | Claude Code (터미널) | Claude.ai (채팅창) |
 |------|-------------------|----------------|
 | 텍스트 입력 | ✅ | ✅ |
-| 이미지 입력 | ❌ | ✅ |
+| 이미지 입력 | ✅ (Control+Option+V) | ✅ |
 | 파일 시스템 접근 | ✅ | ❌ |
 | MCP 사용 | ✅ | ❌ |
 
-멀티모달(이미지) 활용은 Claude.ai 채팅창에서, 코드 파일 분석은 Claude Code에서.
+Claude Code 터미널에서도 **Control + Option + V** 로 이미지 붙여넣기가 가능하다.
 
 ---
 
