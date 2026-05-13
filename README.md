@@ -1,5 +1,5 @@
 # AI Dev Notes
-**34일, 34개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**35일, 35개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소  
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -17,8 +17,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 34일 |
-| 실험 수 | 34개 |
+| 총 실험 기간 | 35일 |
+| 실험 수 | 35개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -65,6 +65,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 032 | [멀티모달 활용 — 스크린샷 → 접근성 점검 자동화](./032-multimodal-accessibility-check/) | 이미지 분석은 시각적 스크리닝, 코드 검증은 Claude Code로 |
 | 033 | [ADB + Claude Code로 실기기 UI 자동 테스트](./033-adb-real-device-ui-testing/) | 실기기 자동 조작 + UI dump 분석으로 버그 3개 자동 발견 |
 | 034 | [ADB 심화 — 텍스트 입력 + 스크롤 + 프레임 성능 측정](./034-adb-advanced-automation/) | Samsung 한글 입력 차단 해결 + gfxinfo 프레임 측정 (Janky 0.93%) |
+| 035 | [ADB + Claude Code로 UI Visual Regression Test 자동화](./035-visual-regression-test/) | before/after 자동 캡처 + Claude 이미지 비교 분석 + 리포트 자동 생성 |
 
 ---
 
