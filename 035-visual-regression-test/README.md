@@ -104,6 +104,14 @@ val spanCount = maxOf(requireActivity().computeWindowWidthSizeClass().toMovieGri
 
 ---
 
+## before vs after 스크린샷
+
+| before (2열) | after (3열) |
+|:---:|:---:|
+| <img width="300" alt="home_before" src="https://github.com/user-attachments/assets/b38e2a8c-2f93-4bf3-b630-cc166081a5ae" /> | <img width="300" alt="home_after" src="https://github.com/user-attachments/assets/35f8912e-1ee6-4f83-8f2b-06ba7c4af1c5" /> |
+
+---
+
 ## before vs after 비교 결과
 
 | 화면 | 변경 여부 | 변경 내용 |
