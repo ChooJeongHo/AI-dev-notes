@@ -1,5 +1,5 @@
 # AI Dev Notes
-**38일, 38개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**39일, 39개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소  
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -17,8 +17,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 38일 |
-| 실험 수 | 38개 |
+| 총 실험 기간 | 39일 |
+| 실험 수 | 39개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -69,6 +69,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 036 | [Claude Code로 기술 문서 자동 생성](./036-technical-docs-automation/) | MovieFinder 1,187줄 / MediScan 754줄 기술문서 자동 생성, ADR 역추적 포함 |
 | 037 | [MovieFinder 전용 커스텀 MCP 서버 직접 제작](./037-custom-mcp-server/) | ADB 자동화 툴 4종 MCP화, 보안 취약점 자동 수정 포함 |
 | 038 | [CLAUDE.md 경량화 + 품질 비교 실험](./038-claudemd-optimization/) | 26.6% 경량화 후 코드리뷰 점수 8.2→8.6, 블로킹 이슈 4→0개 |
+| 039 | [모델별 코드리뷰 비용 vs 품질 트레이드오프](./039-model-comparison/) | Sonnet이 회귀 버그 탐지 최강, "비싼 모델 = 좋은 리뷰" 가설 반증 |
 
 ---
 
