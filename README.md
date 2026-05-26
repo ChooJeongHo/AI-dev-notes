@@ -1,5 +1,5 @@
 # AI Dev Notes
-**42일, 42개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**43일, 43개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소  
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -17,8 +17,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 42일 |
-| 실험 수 | 42개 |
+| 총 실험 기간 | 43일 |
+| 실험 수 | 43개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -73,6 +73,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 040 | [Claude Code vs Gemini CLI 코드리뷰 비교](./040-claude-vs-gemini-cli/) | 버그 탐지는 Claude Code, 아키텍처 개선 제안은 Gemini CLI 강점 |
 | 041 | [GEMINI.md 설정 전후 비교 실험](./041-gemini-md-impact/) | 이슈 수 동일, 분석 깊이와 탐색 방식 개선 — "AI 도구는 컨텍스트 설정이 절반" |
 | 042 | [멀티 리뷰 통합 → 버그 분류 → GitHub Issues 자동 등록](./042-bug-classification-pipeline/) | 52건→36건 중복 제거, HIGH 9건 병렬 자동 등록 (#62~#70) |
+| 043 | [Claude Code로 앱 스토어 설명문 자동 생성](./043-store-listing-automation/) | strings.xml 분석으로 숨겨진 기능 발굴, MovieFinder·MediScan 즉시 등록 가능 설명문 생성 |
 
 ---
 
