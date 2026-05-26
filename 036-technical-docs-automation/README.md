@@ -95,7 +95,7 @@ README 수준이 아닌 아키텍처 설계 근거, 데이터 흐름, ADR까지 
 
 ---
 
-## 느낀 점
+## 느낀 
 
 기술문서는 항상 "나중에 써야지" 하다가 미뤄지는 작업이었다.  
 Claude Code가 코드베이스를 직접 읽고 설계 근거까지 역추적해서 문서화해준다는 게 인상적이었다.
@@ -106,5 +106,5 @@ Claude Code가 코드베이스를 직접 읽고 설계 근거까지 역추적해
 
 ---
 
-*실험 대상: [ChooJeongHo/MovieFinder](https://github.com/ChooJeongHo/MovieFinder), [ChooJeongHo/MediScan](https://github.com/ChooJeongHo/MediScan)*  
+*실험 대상: [ChooJeongHo/MovieFinder](https://github.com/ChooJeongHo/MovieFinder), MediScan (private)*  
 *작성일: 2026-05-14*
