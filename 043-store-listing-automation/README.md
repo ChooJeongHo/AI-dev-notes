@@ -99,5 +99,5 @@ Claude Code가 스토어 알고리즘까지 고려해서 작성했다:
 
 ---
 
-*실험 대상: [ChooJeongHo/MovieFinder](https://github.com/ChooJeongHo/MovieFinder), [ChooJeongHo/MediScan](https://github.com/ChooJeongHo/MediScan)*  
+*실험 대상: [ChooJeongHo/MovieFinder](https://github.com/ChooJeongHo/MovieFinder), MediScan (private)*  
 *작성일: 2026-05-23*
