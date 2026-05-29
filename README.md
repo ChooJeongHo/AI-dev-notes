@@ -1,5 +1,5 @@
 # AI Dev Notes
-**45일, 45개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**46일, 46개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소  
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -9,7 +9,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 ## 포트폴리오
 
 → [1차 실험 (001~017) — AI 도구 활용 및 자동화 구축](./PORTFOLIO.md)  
-→ [2차 실험 (018~030) — AI를 더 잘 쓰는 방법 탐구](./PORTFOLIO_v2.md)
+→ [2차 실험 (018~030) — AI를 더 잘 쓰는 방법 탐구](./PORTFOLIO_v2.md)  
+→ [3차 실험 (031~045) — 실제 개발 문제를 AI로 해결](./PORTFOLIO_v3.md)
 
 ---
 
@@ -17,8 +18,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 45일 |
-| 실험 수 | 45개 |
+| 총 실험 기간 | 46일 |
+| 실험 수 | 46개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -76,6 +77,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 043 | [Claude Code로 앱 스토어 설명문 자동 생성](./043-store-listing-automation/) | strings.xml 분석으로 숨겨진 기능 발굴, MovieFinder·MediScan 즉시 등록 가능 설명문 생성 |
 | 044 | [Claude Code로 신규 개발자 온보딩 문서 자동 생성](./044-onboarding-doc-automation/) | 563줄 온보딩 문서 자동 생성, "자주 하는 실수" 8가지·핵심 패턴 9가지 포함 |
 | 045 | [Claude Code로 코드 기술 부채 자동 측정](./045-tech-debt-measurement/) | 14,305줄 분석, 부채 점수 28/100 🟢, TODO 0건, Presentation God Class 집중 확인 |
+| 046 | [3차 실험 총정리 및 포트폴리오 v3 작성](./PORTFOLIO_v3.md) | 031~045 종합 정리, 실제 개발 문제를 AI로 해결하는 파이프라인 완성 |
 
 ---
 
