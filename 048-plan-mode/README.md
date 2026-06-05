@@ -99,4 +99,4 @@ Auto Mode가 편하지만 Plan Mode가 오히려 더 빠르고 안정적이었�
 ---
 
 *실험 대상: [ChooJeongHo/MovieFinder](https://github.com/ChooJeongHo/MovieFinder)*  
-*작성일: 2026-06-02*
+*작성일: 2026-06-03*
