@@ -114,4 +114,4 @@ pre-commit Detekt 오류 발생 (TooManyFunctions)
 ---
 
 *실험 대상: [ChooJeongHo/MovieFinder](https://github.com/ChooJeongHo/MovieFinder)*  
-*작성일: 2026-06-01*
+*작성일: 2026-06-02*
