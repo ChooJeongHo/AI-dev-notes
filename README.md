@@ -1,5 +1,5 @@
 # AI Dev Notes
-**52일, 52개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**53일, 53개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소  
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -18,8 +18,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 52일 |
-| 실험 수 | 52개 |
+| 총 실험 기간 | 53일 |
+| 실험 수 | 53개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -84,6 +84,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 050 | [/sciomc 병렬 에이전트 아키텍처 건강도 분석](./050-sciomc-parallel-agents/) | 5개 에이전트 병렬 분석, 이전 5번 감사에서 놓친 치명 버그 2개 신규 발견 |
 | 051 | [/autoresearch 자율 테스트 커버리지 향상](./051-autoresearch/) | Line 66%→75%, Branch 63%→70% 자율 달성, 테스트 ~1,500줄 자동 추가 |
 | 052 | [Claude GitHub App + @claude PR 자동 수정](./052-autofix-pr/) | CI 실패 PR에 @claude 코멘트로 37초 만에 자동 수정 + 커밋 완료 |
+| 053 | [Claude Code Hooks — .kt 수정 시 Detekt 자동 실행](./053-claude-code-hooks/) | PostToolUse 훅으로 파일 수정 즉시 ~800ms Detekt 실행, pre-commit 대비 37배 빠름 |
 
 ---
 
