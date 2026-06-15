@@ -1,5 +1,5 @@
 # AI Dev Notes
-**55일, 55개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**56일, 56개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소  
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -18,8 +18,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 55일 |
-| 실험 수 | 55개 |
+| 총 실험 기간 | 56일 |
+| 실험 수 | 56개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -87,6 +87,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 053 | [Claude Code Hooks — .kt 수정 시 Detekt 자동 실행](./053-claude-code-hooks/) | PostToolUse 훅으로 파일 수정 즉시 ~800ms Detekt 실행, pre-commit 대비 37배 빠름 |
 | 054 | [Claude Code PreToolUse 훅 — Domain 레이어 Android 의존성 차단](./054-pretooluse-hooks/) | 수정 전 Android import 원천 차단, Pre+Post+pre-commit 3단계 품질 게이트 완성 |
 | 055 | [/ultrawork 병렬 에이전트 실험 — 3가지 작업 동시 실행](./055-ultrawork/) | 8분 31초 만에 UI 버그 8개 발견 + 테스트 30개 추가, worktree 격리 자동 적용 |
+| 056 | [Claude Code로 앱 성능 프로파일링 자동화](./056-performance-profiling/) | 에뮬레이터 Janky 31% → 실기기 5.41%, 에뮬레이터가 최대 11배 과장됨을 수치로 증명 |
 
 ---
 
