@@ -190,26 +190,6 @@ PreToolUse + PostToolUse 훅 조합으로 AI가 코드를 수정하기 전/후�
 
 ---
 
-## 4차 실험 전체 목록
-
-| # | 실험 | 핵심 결과 |
-|---|------|---------|
-| 047 | Claude Code Auto Mode | 승인 0회, 6분 29초 완주 |
-| 048 | Claude Code Plan Mode | 4분 41초, Detekt 오류 0건 |
-| 049 | Claude Code Accept Edits Mode | 12파일 순감소 58줄 |
-| 050 | /sciomc 병렬 에이전트 | 이전 5번 감사에서 놓친 치명 버그 2개 발견 |
-| 051 | /autoresearch 자율 커버리지 향상 | Line 66%→75%, Branch 63%→70% 자율 달성 |
-| 052 | @claude PR 자동 수정 | CI 실패 PR → 37초 만에 자동 수정 |
-| 053 | PostToolUse 훅 | .kt 수정 즉시 ~800ms Detekt 실행 |
-| 054 | PreToolUse 훅 | Domain 레이어 Android import 원천 차단 |
-| 055 | /ultrawork 병렬 3작업 | 8분 31초, UI 버그 8개 + 테스트 30개 |
-| 056 | 앱 성능 프로파일링 자동화 | 에뮬레이터 Janky 31% → 실기기 5.41% |
-| 057 | /ultraplan | 클라우드 심층 계획 + detekt 버그 발견 |
-| 058 | /loop | 3회차 자율 반복으로 14개 파일 수정 |
-| 059 | /schedule | 매주 월요일 GitHub 이슈 리포트 자동 생성 |
-
----
-
 → [전체 실험 기록 보기](./README.md)
 
 ---
