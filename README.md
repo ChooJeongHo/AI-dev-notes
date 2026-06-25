@@ -1,5 +1,5 @@
 # AI Dev Notes
-**63일, 63개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**64일, 64개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소  
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -19,8 +19,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 63일 |
-| 실험 수 | 63개 |
+| 총 실험 기간 | 64일 |
+| 실험 수 | 64개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -96,6 +96,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 061 | [Exa MCP 심화 — 라이브러리 최신 버전 및 보안 이슈 자동 리서치](./061-exa-library-research/) | 4개 라이브러리 병렬 검색, 의존성 충돌 연결 고리 자동 발견, 업그레이드 가이드 209줄 생성 |
 | 062 | [Baseline Profile 자동화 — 한 줄 명령으로 프로필 갱신](./062-baseline-profile-automation/) | 307줄 스크립트로 에뮬레이터 시작→프로필 생성→결과 검증 4분 3초 완료 |
 | 063 | [Claude Code로 접근성 자동 감사](./063-accessibility-audit/) | MAJOR 4건 + MINOR 5건 발견, 색상 대비 WCAG 기준 자동 계산 |
+| 064 | [Context7 MCP 심화 — 공식 문서 기반 라이브러리 개선점 발견](./064-context7-deep-dive/) | 공식 문서와 코드 대조로 8개 개선점 발견, 훈련 데이터 컷오프 이후 최신 API 패턴 반영 |
 
 ---
 
