@@ -1,5 +1,5 @@
 # AI Dev Notes
-**67일, 67개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**68일, 68개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소  
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -19,8 +19,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 67일 |
-| 실험 수 | 67개 |
+| 총 실험 기간 | 68일 |
+| 실험 수 | 68개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -100,6 +100,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 065 | [Claude Code로 i18n 자동화 — strings.xml 영어 번역 감사 및 수정](./065-i18n-automation/) | KO/EN 301개 키 완전 일치 달성, 누락 3개 추가 + plurals 문법 오류 발견 |
 | 066 | [릴리즈 파이프라인 자동화 — 버전 관리부터 GitHub Release까지](./066-release-pipeline/) | 한 줄 명령으로 버전 증가→CHANGELOG→태그→AAB 빌드→GitHub Release 자동 완성 |
 | 067 | [네트워크 보안 강화 자동화](./067-network-security/) | OS 레벨 + 앱 레벨 이중 피닝 전략 적용, Bearer 토큰 로그 마스킹 |
+| 068 | [SearchFragment Compose 마이그레이션 (심화)](./068-search-compose-migration/) | ViewModel+Paging3+RecyclerView 하이브리드 마이그레이션, 콜백 브릿지 패턴 적용 |
 
 ---
 
