@@ -1,16 +1,16 @@
 # AI Dev Notes
-**68일, 68개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**69일, 69개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
-AI 도구를 활용한 개발 실험과 학습 기록 저장소  
+AI 도구를 활용한 개발 실험과 학습 기록 저장소
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
 
 ---
 
 ## 포트폴리오
 
-→ [1차 실험 (001~017) — AI 도구 활용 및 자동화 구축](./PORTFOLIO.md)  
-→ [2차 실험 (018~030) — AI를 더 잘 쓰는 방법 탐구](./PORTFOLIO_v2.md)  
-→ [3차 실험 (031~045) — 실제 개발 문제를 AI로 해결](./PORTFOLIO_v3.md)  
+→ [1차 실험 (001~017) — AI 도구 활용 및 자동화 구축](./PORTFOLIO.md)
+→ [2차 실험 (018~030) — AI를 더 잘 쓰는 방법 탐구](./PORTFOLIO_v2.md)
+→ [3차 실험 (031~045) — 실제 개발 문제를 AI로 해결](./PORTFOLIO_v3.md)
 → [4차 실험 (047~059) — AI 에이전트 시스템 구축](./PORTFOLIO_v4.md)
 
 ---
@@ -19,8 +19,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 68일 |
-| 실험 수 | 68개 |
+| 총 실험 기간 | 69일 |
+| 실험 수 | 69개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -101,6 +101,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 066 | [릴리즈 파이프라인 자동화 — 버전 관리부터 GitHub Release까지](./066-release-pipeline/) | 한 줄 명령으로 버전 증가→CHANGELOG→태그→AAB 빌드→GitHub Release 자동 완성 |
 | 067 | [네트워크 보안 강화 자동화](./067-network-security/) | OS 레벨 + 앱 레벨 이중 피닝 전략 적용, Bearer 토큰 로그 마스킹 |
 | 068 | [SearchFragment Compose 마이그레이션 (심화)](./068-search-compose-migration/) | ViewModel+Paging3+RecyclerView 하이브리드 마이그레이션, 콜백 브릿지 패턴 적용 |
+| 069 | [의존성 버전 자동 진단 — 안전/위험 판단 파이프라인](./069-dependency-update-pipeline/) | 34개 항목 중 30개 최신 확인, 버전 불변이어도 위험한 케이스(archived·deprecated) 자동 탐지 |
 
 ---
 
