@@ -1,6 +1,6 @@
 # AI Dev Notes
 
-**71일, 71개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**72일, 72개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -20,8 +20,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 71일 |
-| 실험 수 | 71개 |
+| 총 실험 기간 | 72일 |
+| 실험 수 | 72개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -105,6 +105,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 069 | [의존성 버전 자동 진단 — 안전/위험 판단 파이프라인](./069-dependency-update-pipeline) | 34개 항목 중 30개 최신 확인, 버전 불변이어도 위험한 케이스(archived·deprecated) 자동 탐지 |
 | 070 | [Claude Code 커스텀 Subagent 직접 설계](./070-custom-subagent-design) | "AI 이용"에서 "AI 설계"로 전환, 서브에이전트가 잡은 오탐(false positive)을 실제 컴파일로 검증하며 한계까지 문서화 |
 | 071 | [Subagent 개선 + PreToolUse 훅 자동 연동](./071-subagent-hook-integration) | 오탐 방지 규칙 내장 + Hook으로 자동 사전검토 시스템 완성, "결정론적 차단 vs 확률적 정보 제공" 설계 원칙 정립 |
+| 072 | [멀티 에이전트 오케스트레이션 — 설계자→구현자→검증자 파이프라인](./072-multi-agent-pipeline) | 원샷 대비 파이프라인이 시간 18% 절약 + 검증자가 원샷에서만 응집도 문제 발견, 구조적 안전장치의 가치 확인 |
 
 ---
 
