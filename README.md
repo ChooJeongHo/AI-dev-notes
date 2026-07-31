@@ -1,6 +1,6 @@
 # AI Dev Notes
 
-**85일, 85개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**86일, 86개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -21,8 +21,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 85일 |
-| 실험 수 | 85개 |
+| 총 실험 기간 | 86일 |
+| 실험 수 | 86개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -120,6 +120,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 083 | [KOFIC 주간 박스오피스 확장 — 재사용성 실증](./083-kofic-weekly-extension) | 081/082 설계의 재사용 가능성을 실기기 로그로 직접 증명, 082와 다른 형태의 "우연한 테스트 통과" 재발견 및 예방 |
 | 084 | [KOFIC UI 접근성 재감사 — 063일차 교훈이 새 코드에 남았는가](./084-kofic-accessibility-reaudit) | 색상 단독 의존·발화 누락 패턴이 신규 UI에서 반복 확인, 아키텍처 수정이 접근성도 부수적으로 개선한 사례 발견 |
 | 085 | [LLM-as-judge를 RAG에 적용 — 재사용성 실증](./085-rag-answer-judge) | 검증자 자신의 실수까지 judge가 적발, 079일차 함정(유사도≠랭킹) 재현한 오답을 정확히 감점 상한으로 판정, 재현성 검증 완료 |
+| 086 | [Jetpack Glance 홈 화면 위젯](./086-glance-widget) | Domain 레이어 100% 재사용, XML→Compose→Glance 세 번의 UI 전환에도 비즈니스 로직 무변경 실증 |
 
 ---
 
