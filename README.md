@@ -1,6 +1,6 @@
 # AI Dev Notes
 
-**90일, 90개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**91일, 91개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -22,8 +22,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 90일 |
-| 실험 수 | 90개 |
+| 총 실험 기간 | 91일 |
+| 실험 수 | 91개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -126,6 +126,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 088 | [Stop Hook 실전 검증 + "오래된 증거" 함정 — 3부작 완성](./088-stop-hook-trilogy-completion) | 진짜 세션 종료로 087일차 훅 실전 검증, 083일차와 같은 "정적 사실만 확인하면 시점을 놓친다" 함정 재발견 및 수정 |
 | 089 | [기존 스킬로 검증하고 즉시 고치기 — /network-layer-validator](./089-network-layer-validator) | 081~083 KOFIC 연동 재검증, callTimeout 미설정 발견 즉시 수정 및 재검증, 검증 도구가 coroutineScope/supervisorScope 오탐 스스로 회피 |
 | 090 | [6차 실험 총정리 및 포트폴리오 v6 작성](./090-summary-v6) | 076~089 종합 정리, "무엇을 검증할 것인가"라는 6차 사이클 완성 |
+| 091 | [기존 스킬로 검증하기 — /material3-design-validator](./091-material3-design-validator) | 086일차 Glance 위젯 다크모드 대응 확인, 타이포그래피 하드코딩 수정 + 부수 발견 딥링크 크래시·인증서 핀 간헐 실패 처리 |
 
 ---
 
