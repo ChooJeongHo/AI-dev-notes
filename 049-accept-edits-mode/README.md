@@ -91,4 +91,4 @@ Accept Edits Mode는 "파일은 믿지만 bash는 내가 확인하고 싶다"는
 ---
 
 *실험 대상: [ChooJeongHo/MovieFinder](https://github.com/ChooJeongHo/MovieFinder)*  
-*작성일: 2026-06-04*
+*작성일: 2026-06-05*
