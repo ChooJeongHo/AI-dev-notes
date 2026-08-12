@@ -108,4 +108,4 @@ Cache-Control 헤더 오버라이드는 **"서버 응답이 실제로 네트워�
 ---
 
 *실험 대상: [ChooJeongHo/MovieFinder](https://github.com/ChooJeongHo/MovieFinder)*
-*작성일: 2026-08-03*
+*작성일: 2026-08-06*
