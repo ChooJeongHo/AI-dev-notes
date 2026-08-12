@@ -90,4 +90,4 @@
 ---
 
 *실험 대상: [ChooJeongHo/MovieFinder](https://github.com/ChooJeongHo/MovieFinder)*
-*작성일: 2026-08-01*
+*작성일: 2026-08-03*
