@@ -104,4 +104,4 @@ IllegalArgumentException 크래시
 ---
 
 *실험 대상: [ChooJeongHo/MovieFinder](https://github.com/ChooJeongHo/MovieFinder)*
-*작성일: 2026-08-05*
+*작성일: 2026-08-10*
