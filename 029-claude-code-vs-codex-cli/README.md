@@ -105,4 +105,4 @@ ChatGPT Plus, Pro, Business 플랜에 포함 (추가 비용 없음)
 ---
 
 *실험 대상: [ChooJeongHo/MovieFinder](https://github.com/ChooJeongHo/MovieFinder)*  
-*작성일: 2026-05-03*
+*작성일: 2026-05-04*
