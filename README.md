@@ -1,6 +1,6 @@
 # AI Dev Notes
 
-**99일, 99개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**100일, 100개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -22,8 +22,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 99일 |
-| 실험 수 | 99개 |
+| 총 실험 기간 | 100일 |
+| 실험 수 | 100개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -135,6 +135,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 097 | [홈 화면 박스오피스에 KMRB 등급 확장 — 캐시 완전 재사용 확인](./097-kmrb-boxoffice-badge) | 096일차 범용 캐시가 조정 없이 그대로 재사용됨, 081~097 KOFIC/KMRB 연동으로 홈 화면 "국내 특화" 정체성 완성 |
 | 098 | [Material3 재검증 — 4번째 반복 오탐, SKILL.md 자체에 가드 추가](./098-material3-revalidation) | 신규 Chip 스타일·기존 드로어블 재사용 2건 모두 git 이력으로 오탐 확인, 검증 스킬 파일에 "0단계 기준선 확인" 가드 신설 |
 | 099 | [Network Layer 재검증 — 처음부터 제대로 만들어져 있었다](./099-network-layer-revalidation) | KMRB 클라이언트 실질 이슈 0건, callTimeout이 공유 함수로 자동 상속됨을 git 이력으로 확인, 098일차와 대조되는 "클린"의 성격 |
+| 100 | [ProGuard 재검증 — 검증 스킬 3부작 완결](./100-proguard-revalidation) | 095일차 SAXParser 선택 덕에 신규 keep 규칙 불필요 확인, 089/091/092 스킬 3부작을 095~097 기준으로 전부 재실행 완료 |
 
 ---
 
