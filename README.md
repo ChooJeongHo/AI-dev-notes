@@ -1,6 +1,6 @@
 # AI Dev Notes
 
-**101일, 101개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**102일, 102개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -22,8 +22,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 101일 |
-| 실험 수 | 101개 |
+| 총 실험 기간 | 102일 |
+| 실험 수 | 102개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -137,6 +137,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 099 | [Network Layer 재검증 — 처음부터 제대로 만들어져 있었다](./099-network-layer-revalidation) | KMRB 클라이언트 실질 이슈 0건, callTimeout이 공유 함수로 자동 상속됨을 git 이력으로 확인, 098일차와 대조되는 "클린"의 성격 |
 | 100 | [ProGuard 재검증 — 검증 스킬 3부작 완결](./100-proguard-revalidation) | 095일차 SAXParser 선택 덕에 신규 keep 규칙 불필요 확인, 089/091/092 스킬 3부작을 095~097 기준으로 전부 재실행 완료 |
 | 101 | [Predictive Back Gesture — 코드가 아니라 리소스 타입이 원인이었다](./101-predictive-back-gesture) | 커스텀 뒤로가기 코드 없음을 확인 후 실기기 스와이프로 진짜 원인(res/anim vs res/animator) 발견, 리스크 기반으로 범위 좁혀 안전하게 적용 |
+| 102 | [Splash Screen API 조사 — 같은 결론, 다른 원인](./102-splash-screen-api) | 초기 커밋부터 공식 API로 구현되어 있어 손댈 것 없음 확인, 101일차와 겉보기엔 같지만 원인이 다른 "코드 변경 없음" 사례 |
 
 ---
 
