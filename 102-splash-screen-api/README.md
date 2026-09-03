@@ -71,4 +71,4 @@ adb shell am start -W로 측정, TotalTime 718~820ms 수준. 인위적 지연(se
 ---
 
 *실험 대상: [ChooJeongHo/MovieFinder](https://github.com/ChooJeongHo/MovieFinder)*
-*작성일: 2026-09-02*
+*작성일: 2026-09-03*
