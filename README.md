@@ -1,6 +1,6 @@
 # AI Dev Notes
 
-**103일, 103개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**104일, 104개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -22,8 +22,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 103일 |
-| 실험 수 | 103개 |
+| 총 실험 기간 | 104일 |
+| 실험 수 | 104개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -139,6 +139,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 101 | [Predictive Back Gesture — 코드가 아니라 리소스 타입이 원인이었다](./101-predictive-back-gesture) | 커스텀 뒤로가기 코드 없음을 확인 후 실기기 스와이프로 진짜 원인(res/anim vs res/animator) 발견, 리스크 기반으로 범위 좁혀 안전하게 적용 |
 | 102 | [Splash Screen API 조사 — 같은 결론, 다른 원인](./102-splash-screen-api) | 초기 커밋부터 공식 API로 구현되어 있어 손댈 것 없음 확인, 101일차와 겉보기엔 같지만 원인이 다른 "코드 변경 없음" 사례 |
 | 103 | [App Shortcuts — 정적분석 다 통과한 코드가 실사용 흐름에서만 무너지다](./103-app-shortcuts) | popBackStack API 오용 버그를 실기기 롱프레스→탭→뒤로가기 흐름에서만 발견, 컴파일·테스트·리뷰가 다루지 않는 새 버그 유형 확인 |
+| 104 | [movie/stats 딥링크 온보딩 재등장 — 새 버그 아닌 커버리지 누락](./104-deeplink-backstack-fix) | 103일차 화이트리스트 함수가 movie/stats를 빠뜨렸던 게 원인, 101/103/104일차 겉보기 같은 증상도 원인 층위가 매번 다름을 확인 |
 
 ---
 
