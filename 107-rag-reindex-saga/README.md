@@ -38,6 +38,8 @@ core/와 최상위 파일이 빠져 있던 이유는, 딥링크 백스택 수정
 2. Wi-Fi/DNS 순단으로 Voyage API 연결 실패, 기존 코드는 429만 재시도하고 일반 네트워크 예외는 그대로 죽었음
 3. ~/.gradle/jdks의 JetBrains JDK 압축 해제 디렉터리가 실행 도중 통째로 사라짐
 4. androidx.sqlite:sqlite-bundled-jvm 네이티브 캐시가 빈 채로 남아 "Cannot find a suitable SQLite binary"로 마지막 DB 쓰기 단계에서 실패
+5. Gradle 데몬이 외부 --stop 명령에 죽어버림 — 배치 저장을 도입해서 이 시점까지는 120개가 보존됨
+6. 근본 원인: 같은 맥에서 **MediScan 프로젝트용 GitHub Actions 셀프호스티드 러너**가 동시에 CI job을 돌리는 중이었고, Gradle 데몬이 프로젝트 단위가 아니라 `~/.gradle` 전역으로 버전별 공유되어 **그쪽 정리 과정이 이쪽 데몬까지 죽였다.** 급기야 `~/.gradle`의 Gradle 9.7.1 배포판 디렉터리 자체가 사라져서, `~/.gradle/caches` 전체 삭제 후 재빌드로 복구했다 (사용자 승인 하에 진행).
 
 ### 코드 수정
 
@@ -46,6 +48,8 @@ core/와 최상위 파일이 빠져 있던 이유는, 딥링크 백스택 수정
 | VoyageEmbeddingProvider.kt | 429뿐 아니라 IOException(네트워크 순단)도 재시도하도록 확장 |
 | Query.kt | ANTHROPIC_API_KEY를 System.getenv() 대신 ProjectConfig(local.properties 포함)에서 읽도록 수정 — 이 버그 때문에 처음 세 질의응답이 전부 오프라인 모드로 나왔었다 |
 | Indexer.kt 계열 | 인덱싱 범위 확장 + resume 로직(dao.count() 기반) 추가 |
+
+**세 파일 모두 아직 커밋하지 않은 상태다.**
 
 최종 결과: 1,680개 청크 저장, 297개 .kt 파일 스캔.
 
@@ -59,11 +63,15 @@ data/remote/dto/KmrbRatingDto.kt(0.4312) 등 top-5 검색. "API → DTO → 도�
 
 ### Q2. "딥링크 관련 버그가 가장 많이 발생했던 화면이나 기능은 뭐야?"
 
-core/notification/WatchGoalNotificationHelper.kt(0.4851)가 검색 1위. 동적 단축키(AppShortcutManager) 구조를 클래스 시그니처·refreshRecentMovieShortcuts()·buildMovieShortcut() 코드까지 인용하며 정확히 설명. Mutex/Dispatchers.IO 사용 이유도 코드 주석 그대로 재현. 단, max_tokens=1024 한도에 걸려 답변이 끊김.
+검색 결과: `core/notification/WatchGoalNotificationHelper.kt`(0.4851), `presentation/widget/BoxOfficeWidgetContent.kt`(0.4600), `MainActivity.kt`(0.4593/0.4589/0.4262, 3~5위 전부).
+
+**"통계 화면(statsFragment) 딥링크 알림"을 가장 두드러진 사례로 지목**하고, 백스택/온보딩 재등장 버그를 부가 사례로 덧붙였다. 마지막에 **"컨텍스트에는 이 두 가지 사례만 확인되며, 다른 이력은 알 수 없다"고 명시적으로 한계를 고지**했다.
 
 ### Q3. "App Shortcuts는 어떻게 구현되어 있어?"
 
-89/100점, "신뢰 가능" 판정.
+검색 결과: `core/shortcut/AppShortcutManager.kt`가 top-4(0.6782/0.6326/0.6111/0.5695) 전부, 5위만 `MainActivity.kt`(0.4977).
+
+동적 단축키(`AppShortcutManager`) 구조를 클래스 시그니처·`refreshRecentMovieShortcuts()`·`buildMovieShortcut()` 코드까지 인용하며 정확히 설명. `Mutex`/`Dispatchers.IO` 사용 이유도 코드 주석 그대로 재현. 단, `max_tokens=1024` 한도에 걸려 답변이 중간에 끊겼다.
 
 ---
 
@@ -72,6 +80,18 @@ core/notification/WatchGoalNotificationHelper.kt(0.4851)가 검색 1위. 동적 
 ### Q1 (KMRB 등급 흐름): 70/100, 재검색 권장
 
 근거 충실성 18/25, 청크 관련성 14/25, 랭킹 정확성 25/25(해당없음), 불확실성 정직성 13/25.
+
+| 심각도 | 결함 |
+|---|---|
+| Major | SAX 파싱을 `KmrbRatingDto.kt`에 잘못 귀속 — 실제로는 `KmrbRatingXmlParser.kt:16`, 호출처는 `KoreanRatingRepositoryImpl.kt:51` |
+| Major | 실제 파싱을 수행하는 `KmrbRatingXmlParser.kt`(청크 9개)·`KoreanRatingRepositoryImpl.kt`(청크 5개)가 인덱스에 존재하는데도 top-5 밖으로 밀려 답변에서 통째로 누락 (인덱싱 누락이 아니라 순수 랭킹 실패) |
+| Major | 3파일짜리 요약 흐름도를 완결된 파이프라인처럼 제시하면서 "Repository/UseCase 계층 미확인" 고지를 달지 않음 |
+| Minor | `KoreanRatingGrade.kt` 위치 오류 — 실제 호출처는 presentation의 `BoxOfficeAdapter.kt:104` 한 곳뿐 |
+| Minor | 답변이 코드펜스 미완결 상태로 출력 잘림 |
+
+**judge의 결론:**
+
+> 환각 0건. 인용된 함수명·필드명·주석은 전부 실제 소스와 문자 단위로 일치. 문제는 날조가 아니라 top-K=5가 좁아서 생긴 재현율(recall) 실패 — 파일을 잘못 짚은 것도 "없는 사실을 지어낸" 게 아니라 "있는 주석을 과잉 해석"한 결과다.
 
 ### Q2 (딥링크 버그 최다 발생 화면): 74/100, "유사도≠랭킹" 함정 부분 재현
 
@@ -92,6 +112,19 @@ core/notification/WatchGoalNotificationHelper.kt(0.4851)가 검색 1위. 동적 
 
 ### Q3 (App Shortcuts 구현 방식): 89/100, 신뢰 가능
 
+근거 충실성 24/25, 청크 관련성 19/25, 랭킹 정확성 25/25(해당없음), 불확실성 정직성 21/25.
+
+| 심각도 | 결함 |
+|---|---|
+| Major | `.xml` 청크가 인덱스에 0개(전용 청커 부재) — 정적 단축키(`res/xml/shortcuts.xml`의 search/favorite)가 원천적으로 검색 불가, 기능의 절반이 답변에서 누락 |
+| Major | `max_tokens=1024` 한도로 답변이 문장 중간에 잘림 |
+| Minor | "동적 단축키만 다룬다"는 범위 한정을 명시하지 않아 전체를 설명한 것처럼 읽힘 |
+| Minor | `GetRecentShortcutMoviesUseCase.kt` 청크가 top-5 밖으로 밀려 실제 상수값(`MAX_SHORTCUT_MOVIES=2`)이 답변에 반영 안 됨 |
+
+**judge의 결론:**
+
+> 인용된 코드 3블록(클래스 시그니처, `refreshRecentMovieShortcuts`, `buildMovieShortcut`) 전부 저장된 청크 원문 및 실제 소스와 문자 단위로 일치. `Mutex`/IPC 블로킹 이유도 코드 주석의 직역이라 모델이 지어낸 설명이 아님. 감점은 전부 "모델의 실수"가 아니라 **"인덱서가 애초에 XML을 못 보는 구조적 한계"**에서 비롯됐다.
+
 ---
 
 ## 작업 4 — 정리: 076~079일차 설계가 095~106일차의 다른 종류 코드에도 확장 가능했나
@@ -107,6 +140,14 @@ core/notification/WatchGoalNotificationHelper.kt(0.4851)가 검색 1위. 동적 
 
 - 배치 단위 즉시 저장 + resume: 다섯 번의 실패 중 세 번째부터는 진행분이 보존됐고, 마지막 시도는 820개를 스킵하고 860개만 이어서 완주했다. 076~079일차 설계엔 이 안전장치가 아예 없어서 첫 두 번의 실패로 API 비용을 순수하게 날렸다.
 - 네트워크 예외 재시도: 기존엔 429(rate limit)만 재시도했는데, 실제로 발목을 잡은 건 일반 네트워크 순단이었다. 지금은 둘 다 처리.
+
+### 다음에 할 일로 남긴 것 (5가지)
+
+1. 스캔 범위를 하드코딩(`app/src/main/java/...`) 대신 전체 자동 탐색으로 바꾸거나, 최소한 `core/` + 최상위 파일을 영구 반영
+2. `res/xml/*.xml`, `AndroidManifest.xml` 옆에 최소한의 XML 청커 추가
+3. top-K를 5→10으로 올리거나, 질문에 "어떤 파일들" 같은 열거형 신호가 있으면 동적으로 늘리기
+4. "가장 많이/자주" 류 질문에는 시스템 프롬프트로 "이 인덱스는 코드 스냅샷만 포함하며 발생 빈도 집계는 불가"를 명시해 최상급 표현 남발을 가드 (근본 해결은 커밋 이력을 별도 chunkType으로 인덱싱해야 함)
+5. `ClaudeAnswerProvider`의 `max_tokens=1024`를 코드 인용이 많은 질문에 맞춰 상향
 
 ---
 
