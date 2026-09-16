@@ -97,4 +97,4 @@ ClaudeAnswerProvider.kt에 RANKING_OR_FREQUENCY_KEYWORDS(가장 많이/자주, �
 ---
 
 *실험 대상: [ChooJeongHo/MovieFinder](https://github.com/ChooJeongHo/MovieFinder)*
-*작성일: 2026-09-12*
+*작성일: 2026-09-15*
