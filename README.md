@@ -1,6 +1,6 @@
 # AI Dev Notes
 
-**110일, 110개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
+**111일, 111개 실험 — Claude Code / MCP / GitHub Actions로 Android 개발 워크플로우를 자동화한 실험 기록**
 
 AI 도구를 활용한 개발 실험과 학습 기록 저장소
 Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합니다.
@@ -23,8 +23,8 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 
 | 지표 | 수치 |
 |------|------|
-| 총 실험 기간 | 110일 |
-| 실험 수 | 110개 |
+| 총 실험 기간 | 111일 |
+| 실험 수 | 111개 |
 | JaCoCo 테스트 커버리지 달성 | 74.8% |
 | 유닛 테스트 수 | 0 → 465개 (Claude Code 자동 작성) |
 | ultra think 자동 발견 이슈 | 30개+ (4개 에이전트 병렬 분석) |
@@ -147,6 +147,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 108 | [RAG 랭킹 함정 가드 — 3번 반복된 오답을 정직한 거부로](./108-rag-ranking-guard) | 079/085/107일차 함정을 가드로 해소, judge 재채점 16→25/25, 부수적으로 Claude Code 자체 버그(서브에이전트 무단 중복 실행) 발견 및 신고 |
 | 109 | [TMDB OAuth 플로우 — 최초 가설은 빙산의 일각, 실제론 3중 결함](./109-tmdb-oauth-deeplink) | redirect_to 위치 오류·콜백 파라미터 오가정·Hilt ViewModel 스코프 불일치(MainActivity/SettingsFragment가 다른 인스턴스 참조) 순차 발견 및 수정 |
 | 110 | [Glance 위젯 인터랙션 강화 — 092일차 우려는 기우, 대신 WorkManager 버그 발견](./110-widget-interaction) | 일별/주간 토글 추가, R8 리플렉션 우려는 실측으로 기우 확인, dumpsys jobscheduler로만 드러나는 ExistingWorkPolicy 버그 새로 발견 |
+| 111 | [WorkManager 정책 전체 점검 — "통일해야 한다"는 직관이 틀렸다](./111-workmanager-policy-audit) | 프로젝트 전체 4곳 점검, 새 버그 0건이지만 같은 클래스 내 정반대 정책이 둘 다 정답인 사례 확인, 판단 기준 4가지 수립 + 회귀 테스트 10개 추가 |
 
 ---
 
