@@ -149,7 +149,7 @@ Claude Code 등 AI 기반 개발 도구를 활용한 실험 내용을 정리합�
 | 110 | [Glance 위젯 인터랙션 강화 — 092일차 우려는 기우, 대신 WorkManager 버그 발견](./110-widget-interaction) | 일별/주간 토글 추가, R8 리플렉션 우려는 실측으로 기우 확인, dumpsys jobscheduler로만 드러나는 ExistingWorkPolicy 버그 새로 발견 |
 | 111 | [WorkManager 정책 전체 점검 — "통일해야 한다"는 직관이 틀렸다](./111-workmanager-policy-audit) | 프로젝트 전체 4곳 점검, 새 버그 0건이지만 같은 클래스 내 정반대 정책이 둘 다 정답인 사례 확인, 판단 기준 4가지 수립 + 회귀 테스트 10개 추가 |
 | 112 | [앱별 언어 설정 검증 — 고치려다 만든 회귀를 되돌리다](./112-per-app-language) | 기능은 이미 구현되어 있었음, API 24~32 영속화 시도가 API 33+ 전체에 회귀를 만들어 되돌림, 실기기 전용 버그 일곱 번째 사례 |
-| 113 | [Material You 동적 색상 — 라이브러리 편의 메서드의 사각지대](./113-material-you-dynamic-color) | "M3 없이도 동적 색상 가능"은 맞았지만 편의 메서드가 비-M3 테마를 조용히 무시하는 버그 2건 발견 및 수정, 실기기 전용 버그 여덟 번째 |
+| 113 | [Material You 동적 색상 — 세 겹으로 겹친 함정](./113-material-you-dynamic-color) | 편의 메서드 no-op + AppCompat 타이밍 버그 2건 수정, 삼성 기기는 "안 됨"이 아니라 수동 팔레트 선택이 필요했음을 확인, 실기기 전용 버그 여덟 번째 |
 
 ---
 
