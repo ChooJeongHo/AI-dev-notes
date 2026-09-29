@@ -65,7 +65,7 @@ class BoxOfficeWidgetReceiver : GlanceAppWidgetReceiver() {
 
 ```kotlin
 val request = PeriodicWorkRequestBuilder<BoxOfficeWidgetUpdateWorker>(
-    repeatInterval = 15, TimeUnit.MINUTES  // WorkManager 주기 작업의 시스템 최소 간격
+    repeatInterval = 6, TimeUnit.HOURS
 ).build()
 ```
 
@@ -78,7 +78,7 @@ override suspend fun doWork(): Result {
 }
 ```
 
-> `PeriodicWorkRequest`의 최소 주기가 15분으로 시스템에 고정돼 있어, 그보다 촘촘한 실시간 갱신은 애초에 불가능하다. 박스오피스 데이터는 하루 단위로 집계되므로 15분 주기도 충분히 촘촘하다.
+> `PeriodicWorkRequest`의 최소 주기는 시스템상 15분으로 고정돼 있지만, 박스오피스 데이터가 하루 단위로 집계되는 걸 감안해 실제로는 **6시간 주기**로 설정했다. 배터리 소모를 줄이면서도 데이터 신선도는 충분히 유지하는 선택이다.
 
 ---
 
@@ -92,7 +92,7 @@ override suspend fun doWork(): Result {
 | TOP 3 데이터 표시 | 실제 KOFIC 데이터와 일치 |
 | 위젯 탭 → 앱 실행 | 정상 동작 |
 | 다크모드 대응 | `GlanceTheme` 자동 적용 확인 |
-| WorkManager 갱신 | 15분 후 데이터 갱신 확인 |
+| WorkManager 갱신 | 주기적 갱신 워커 등록 및 정상 동작 확인 |
 
 ---
 
@@ -119,7 +119,7 @@ override suspend fun doWork(): Result {
 
 1. Glance는 "홈 화면이 다른 프로세스"라는 제약 때문에, 컴포저블 종류와 클릭 처리 방식이 일반 Compose와 근본적으로 다르다.
 2. Clean Architecture로 설계된 domain 레이어는 **UI 기술이 몇 번 바뀌어도 전혀 손댈 필요가 없다** — 이번 실험이 그 증거다.
-3. 위젯 갱신은 WorkManager 주기 작업으로 처리하며, **최소 주기(15분)라는 시스템 제약**을 미리 알고 설계해야 한다.
+3. 위젯 갱신은 WorkManager 주기 작업으로 처리하며, **시스템 최소 주기(15분)라는 제약 안에서 실제 갱신 빈도(6시간)는 데이터 특성과 배터리 소모를 고려해 별도로 정해야 한다.**
 4. "이전 기술에서 배운 지식이 재사용된다"는 건 API 차원이 아니라 **사고방식(상태 관리, 선언형 사고) 차원**에서 성립한다.
 5. 실기기 검증은 위젯처럼 **다른 프로세스(런처)가 관여하는 UI**에서 특히 더 중요하다 — 에뮬레이터/컴파일만으로는 실제 배치 결과를 알 수 없다.
 
