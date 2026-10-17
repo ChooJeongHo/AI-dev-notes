@@ -352,10 +352,14 @@
 | 머지한 PR 3건(#167·#168·#169)의 브랜치 | 합의된 워크플로("squash 머지→브랜치 삭제") |
 | 폰에서 R2가 저장 후 삭제한 테스트 메모(최종 0개) | R2 정의(사용자 승인) |
 | `/tmp`의 diff용 임시 파일 2개 | **허락 없음(규칙 위반)** |
+| scratchpad의 남은 임시 파일(#169 작업 로그 5개, 오전 문서 갱신 때 만든 것으로 보이는 7개)과 `.omc/claude_md_plan_127.json` | 사용자 허락(리터럴 경로, 삭제 전 `rv`의 출처·종류 확인을 요청) |
+| scratchpad의 `rv`(디렉터리, RecyclerView 1.4.0 소스로 추정, 약 660KB, 10/16 11:54 생성) | 사용자 허락(`rm -r`, 지정한 리터럴 경로 하나만) |
 
 - 복원 전 안전 사본(시청기록 152행)도 scratchpad 삭제에 포함돼 지금은 없다. 폰의 DB는 해시로 복원이 확인된 **뒤**에 삭제됐다.
-- 남아 있는 것: scratchpad의 다른 작업 파일 8개, `transcript_hits.json`(대화 기록에서 R1~R9 원문을 찾은 추출물)과 이번 답을 위해 만든 `c_old.md`·`c_new.md`·`verifier_cands.json`, `.omc/claude_md_plan_127.json`(CLAUDE.md 압축 계획 원문), 스크린샷 6장. **이 중 `transcript_hits.json`과 새 임시 파일 3개, `claude_md_plan_127.json`의 삭제는 사용자 허락 대기였다(README 작성 시점).**
-- 마지막으로 `main`은 `origin/main`과 같고 작업 트리는 깨끗하다.
+- **마지막 확인(2026-10-17 09:39 보고)**: 남은 임시 파일(scratchpad의 #169 작업 로그 5개, 오전 문서 갱신 때 만든 것으로 보이는 파일 7개, `.omc/claude_md_plan_127.json`)은 **사용자 허락 뒤 삭제**했다. 마지막으로 남아 있던 scratchpad의 `rv`는 디렉터리(Java 파일 2개, 약 660KB)로, 이름과 크기상 `androidx.recyclerview` 소스(오늘 원인 확정에 쓴 RecyclerView 1.4.0 소스를 푼 것으로 **추정**, 만든 것이라고 확인하지는 못함)였다. 사용자 허락 뒤 지정한 경로 하나만 `rm -r`로 지웠고(종료 코드 0), 이제 **scratchpad는 비어 있다**(항목 0개, 폴더 자체는 세션 폴더라 남아 있음).
+- `.omc`(항목 8개)는 건드리지 않았다. `artifacts/`에는 `124-home-screenshots`, `125-memo-keyboard`, `126-memo-list`, `127-detail-sections`(스크린샷 6장 그대로)가 있고, `state/`(10/17 09:36)와 `project-memory.json`(10/16 17:19)은 OMC가 쓰는 파일로 이 작업에서 직접 만진 것이 아니다.
+- 저장소: `main`이 `origin/main`과 같고(`edcbaa6`, #169 머지) 작업 트리가 깨끗하다. `README.md:21`은 옛 문구("UseCase 49개, Repository 11개") 그대로이며 현재값(78/21)으로 바꿀지는 **결정 대기(미결)** 상태다.
+- AVD는 원래 있던 3개(`MF_124_1440x3120`, `Pixel_10`, `Pixel_7_Pro`)만 있고 에뮬레이터 프로세스는 없다. 폰은 원복됐고 앱은 꺼져 있다. YR1과 나머지 후속 후보(리뷰 카드 글자 크기, `rv_filmography` 측정, 남은 호출 5곳 점검)는 기록만 유지하고 아무것도 하지 않았다.
 
 ### `CLAUDE.md` (한도 40,000B)
 
