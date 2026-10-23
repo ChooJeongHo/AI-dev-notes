@@ -392,10 +392,12 @@ push 승인 화면의 선택지는 ① CLEAN 그대로(`CLAUDE.md` 36,580B + `DE
 | `scratchpad/132/arc`(58MB, 1,980파일) | 삭제. 평가 트리 3개이고 해시는 `freeze132.json`에 있어 `git archive c297f40`과 `cand`의 후보 파일로 재생성 가능 |
 | `scratchpad/132/__pycache__`(24KB) | 삭제 |
 | `~/.claude/projects/` 평가 부작용 폴더 3개(`arc-old`·`arc-fix`·`arc-clean`, 각 0B) | 삭제(빈 `memory` 하위부터 `rmdir`). `scratchpad-132` 이름 폴더는 0개가 됨. 이전 일차 폴더 185개는 그대로 |
-| 로컬 참조 `origin/docs/132-claude-md-stale-fix` | 삭제(`git branch -d -r`, 이전 커밋 `34f581a`). 131일차 참조 `origin/fix/image-cert-pins`는 **그대로** 둠 |
+| 로컬 참조 `origin/docs/132-claude-md-stale-fix` | 삭제(`git branch -d -r`, 이전 커밋 `34f581a`) |
+| 로컬 참조 `origin/fix/image-cert-pins`(131일차 PR #174 브랜치, 커밋 `dee7f38`) | 보류분 결정 후 **11:52경 삭제**(아래 "보류분 결정과 마무리") |
 
 - 삭제 명령은 모두 종료 코드 0이고 리터럴 경로로 실행했으며 삭제 후 읽어서 확인했다. `git remote prune origin` 전체는 131일차 참조까지 지우는 범위라 선택하지 않았다.
-- **보관**: `scratchpad/132`는 4.3MB, 35항목(`runs` 3.9MB 350파일, `cand` 100KB 6파일, 스크립트·로그·표). 128~131일차 scratchpad(각 18MB·44MB·80MB·104MB)도 그대로다. `runs`·`cand`·스크립트·로그는 README를 올린 뒤 어떻게 할지 정한다(임시 폴더라 OS가 지울 수 있다).
+- **보관**: `scratchpad/132`는 4.3MB, 35항목(`runs` 3.9MB 350파일, `cand` 100KB 6파일, 스크립트·로그·표). 128~131일차 scratchpad(각 18MB·44MB·80MB·104MB)도 그대로다. `runs`·`cand`·스크립트·로그는 보관하기로 정했다(임시 폴더라 OS가 지울 수 있다).
+- **보류분 결정과 마무리(11:52경)**: 사용자가 `runs`·`cand`·스크립트·로그는 **보관**(합쳐 4.3MB라 지워도 얻는 것이 없고 `runs`는 재현이 안 되는 원자료, `cand`는 `arc` 재생성에 필요, 스크립트는 고정 해시를 가진 채점기)하고, 131일차 참조 `origin/fix/image-cert-pins` **하나만** 지우도록 정했다. 삭제 전에 참조 존재와 커밋 해시(`dee7f38`, 2026-10-22)를 읽었고, 이 참조는 `main`에 포함돼 있지 않았다(squash merge라 `c297f40`으로 합쳐졌고 원격 브랜치는 이미 없었음). `git branch -d -r origin/fix/image-cert-pins` 하나만 실행해 종료 코드 0, `prune`은 쓰지 않았다. 남은 원격 추적 참조는 `origin/HEAD -> origin/main`, `origin/main`, `origin/dependabot/gradle/kotlin-24058dc952`(Dependabot PR #115)뿐이다. 커밋 객체 `dee7f38`은 로컬 저장소에 남아 있고 내용은 `c297f40`으로 `main`에 들어가 있다. `main`은 `origin/main`과 같고 작업 트리는 깨끗하다. 보관분(`runs` 3.9MB 350파일, `cand` 100KB 6파일, `scratchpad/132` 35항목 4.3MB)과 128~131일차 scratchpad(18MB·44MB·80MB·104MB)·projects 폴더는 변동이 없다.
 - 메모리(Claude Code): 새 파일 1개(`project_claude_md_stale_cleanup_132.md`), 기존 3개(131일차·128일차 메모리, `feedback_measurement_hygiene_131.md`)와 `MEMORY.md`를 갱신했다. 삭제 뒤 메모리의 scratchpad 크기·projects 폴더 문장도 현재 상태로 고쳤다.
 
 ---
