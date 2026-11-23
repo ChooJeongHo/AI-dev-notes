@@ -340,7 +340,7 @@ C1~C3와 단계 0의 `Grep` 거부는 모두 도구·형식 차이에서 온 실
 - 케이스를 늘리거나 반복했을 때 천장 효과가 사라지는지, 같은 결과가 재현되는지.
 - 평가 환경 밖(훅·메모리·`CLAUDE.md`가 있는 실제 세션)에서의 스킬 동작.
 - 토큰 수와 `Grep` 사용 횟수를 보는 방법(`--keep-temp`나 별도 `indicator` 채점기).
-- **이어서 해야 할 것(승인 대기)**: 낡은 원격 추적 참조 `origin/docs/devlog-day142` 1개 삭제(`git branch -dr`, 사용자 확인 대기), 보관하지 않은 최종 계산 산출물 5개(`timeline142_v2_final_out/err.txt`, `stage_times142.py`·`_out.txt`·`_err.txt`)를 `post_merge`에 추가할지, `scratchpad/142` 정리(55개 파일 + `plugin/`·`ai-dev-notes/`·`idx142`는 삭제하지 않았고 시스템 `/tmp`에는 잔여물 0).
+- **142일차 잔여(143일차 단계 0·3에서 정리됨, 2026-11-23)**: 낡은 원격 추적 참조 `origin/docs/devlog-day142`는 11-23에 승인받아 이미 삭제됐다. `post_merge`에 추가하려던 최종 계산 산출물은 이름이 확인되는 것이 5개(`stage_times142.py` 5,092 B, `stage_times142_out.txt` 1,101 B, `stage_times142_err.txt` 0 B, `timeline142_v2_final_out.txt` 1,124 B, `timeline142_v2_final_err.txt` 0 B)이고 (Claude Code가 "6개"라고 한 것은 집계 오류였다) `scratchpad/142` 정리로 파일이 사라져 추가할 수 없다. `scratchpad/142`는 143일차에 보관본(`day142`)에서 `plugin/`을 복원해 쓴 뒤 143일차 단계 3에서 다시 삭제했다.
 - 이어지는 것: 141일차 이월(F1~F5 실제 결함 여부 확정, 후보 4개의 "재변경 0개" 미검증), 30일 뒤 사후 판정(2026-12-09 전후, `gold_future_139.json`), 140일차 미해결(리뷰 1라운드 반영 개수 9 대 8+1, 자기 점검 149+1 대 151), 150일차 `PORTFOLIO_v10`(136~149일차), `scratchpad/137~142` 정리(리터럴 경로 허락 필요), `CLAUDE.md`의 낡은 "Gradle 9.8.2" 문구(Dependabot으로 9.9.1 반영, 별도 PR 후보).
 
 ---
