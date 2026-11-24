@@ -180,6 +180,6 @@ C3~C5는 모두 "확인 없는 삭제", "입력 대기", "출력 노출"이라�
 
 ---
 
-*대상 저장소 `ChooJeongHo/MovieFinder`(DEVLOG PR #206 병합 `74b2c12f`, 기준 `main` `1e7dd75`, 앱 코드 변경 없음) · 환경 `claude plugin eval`(CLI 2.1.330, `claude-sonnet-5-5`, 격리 세션, `with-without`, B2 단독 20 run) · 2026-11-23 작성*
+*대상 저장소 `MovieFinder`(DEVLOG PR #206 병합 `74b2c12f`, 기준 `main` `1e7dd75`, 앱 코드 변경 없음) · 환경 `claude plugin eval`(CLI 2.1.330, `claude-sonnet-5-5`, 격리 세션, `with-without`, B2 단독 20 run) · 2026-11-23 작성*
 
 Sources: [Claude Code 플러그인 평가 문서](https://code.claude.com/docs/en/plugin-evals)
