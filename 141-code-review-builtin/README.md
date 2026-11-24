@@ -488,6 +488,6 @@ C1·C2·C7은 모두 zsh 확장 규칙 문제이고 이 세션에서 세 번째 
 
 ---
 
-*대상 저장소 `ChooJeongHo/MovieFinder`(DEVLOG PR #196 병합 `74a5ddf8`, 기준 `main` `7a80583a`, 앱 코드 변경 없음) · 환경 `claude -p`(`claude-sonnet-5-5`), `/code-review high`, CLI 2.1.322 · 2026-11-12 작성*
+*대상 저장소 `MovieFinder`(DEVLOG PR #196 병합 `74a5ddf8`, 기준 `main` `7a80583a`, 앱 코드 변경 없음) · 환경 `claude -p`(`claude-sonnet-5-5`), `/code-review high`, CLI 2.1.322 · 2026-11-12 작성*
 
 Sources: [Claude Code whats-new](https://code.claude.com/docs/en/whats-new)
