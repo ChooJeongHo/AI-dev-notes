@@ -361,6 +361,6 @@ C1~C3와 단계 0의 `Grep` 거부는 모두 도구·형식 차이에서 온 실
 
 ---
 
-*대상 저장소 `ChooJeongHo/MovieFinder`(DEVLOG PR #200 병합 `855a7081`, 기준 `main` `98e5b17`, 앱 코드 변경 없음) · 환경 `claude plugin eval`(CLI 2.1.325, `claude-sonnet-5-5`, 격리 세션, `with-without`) · 2026-11-16 작성*
+*대상 저장소 `MovieFinder`(DEVLOG PR #200 병합 `855a7081`, 기준 `main` `98e5b17`, 앱 코드 변경 없음) · 환경 `claude plugin eval`(CLI 2.1.325, `claude-sonnet-5-5`, 격리 세션, `with-without`) · 2026-11-16 작성*
 
 Sources: [Claude Code 플러그인 평가 문서(plugin-evals)](https://code.claude.com/docs/en/plugin-evals)
